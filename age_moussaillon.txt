@@ -1,0 +1,27 @@
+Algorithme age_mousillon
+
+Age=Tableau[1..8] d'entier 
+
+ Variable  max,i,j:entier
+ Constante n:(entier)=8
+
+
+Début
+  Pour i=1 à i=8 faire
+    Afficher ("Entrer l'age de votre collegue")
+    Saisir(Age[i])
+    retourner Age
+  Fin pour
+
+  Pour i de 1 à 7 faire
+    max=i
+    Pour j de i+1 à n faire
+      Si (Age[j]>Age[max]) Alors (max=j)
+      Finsi
+    Finpour
+      Si (max<>i) Alors echange(Age[i],Age[max])
+      Finsi
+  retourner Age
+  Fin pour
+
+Fin

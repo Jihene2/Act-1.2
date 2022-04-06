@@ -1,0 +1,44 @@
+Algorithm palindrome 
+ 
+Variable c : chaine de carctére 
+         i,j:entiers
+         Résultat : booléen
+
+Début
+    i = 1;
+    j = longeur (c) ;
+    résultat = Vrai;
+    Tantque ((résultat = Vrai) Et (i < j)) Faire
+        Si(c[i] = c[j]) Alors
+            résultat = Vrai;
+            i = i + 1;
+            j = j - 1;
+        Sinon
+            résultat := Faux;
+        FinSi
+    FinTantque  
+Fin
+-----------------------------------------------------
+
+Fonction Palindrome
+
+ Fonction Palindrome(c:chaine:caractère): booléen;
+ 
+Var
+    i, j: entier;
+    résultat: booléen;
+     
+Début
+    i = 1;
+    j = longeur (c) ;
+    résultat = Vrai;
+    Tantque ((résultat = Vrai) Et (i < j)) Faire
+        Si(c[i] = c[j]) Alors
+            résultat = Vrai;
+            i = i + 1;
+            j = j - 1;
+        Sinon
+            résultat := Faux;
+        FinSi
+    FinTantque  
+Fin
